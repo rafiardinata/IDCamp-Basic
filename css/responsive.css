@@ -1,0 +1,54 @@
+@media screen and (max-width: 980px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 55px;
+  }
+
+  .content-description {
+    flex-basis: 100%; /* Ambil seluruh lebar layar */
+    text-align: center;
+  }
+
+  main .content .content-description .title {
+    font-size: 2rem;
+    align-items: center;
+  }
+
+  .card-grid {
+    flex-basis: 100%; /* Ambil seluruh lebar layar */
+    grid-template-columns: 1fr; /* Atur grid menjadi satu kolom */
+  }
+
+  .card-style {
+    margin-bottom: 20px; /* Tambahkan margin antara kartu */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header.navbar-container {
+    flex-direction: column;
+  }
+
+  header.navbar-container .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+    padding-top: 1.5rem;
+  }
+
+  main .content {
+    padding-top: 110px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  main .content {
+    padding-top: 170px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  main .content {
+    padding-top: 220px;
+  }
+}
